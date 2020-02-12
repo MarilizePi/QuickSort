@@ -1,0 +1,45 @@
+OVERVIEW:
+
+This assignment focuses mainly on testing the Quick Sort Algorithm. For that, I used the class FHsort.java,
+provided by the course, which contains sorting methods to sort arrays of different sizes. I also created a main methods
+that will test the recursion limit of different array sizes and print them accordingly.
+
+After having all the classes, I ran the program three times to filter out insignificant data (outliers).
+Another important note is that for each array I took the average of three different array's time. This also filtered out
+possible outliers.
+For the graph, I used the last run. I gathered 20 intervals, starting from 20k until 9.5M, increases by 500K.
+
+I, then, input all the data in a spreadsheet (Data_Points.xlsx) and generated a graph with 4 variants.
+The notes regarding the graph(s) are:
+
+----------
+
+NOTE 1: Graph_Overlaid.png
+
+This is the first graph generated with all data points overlaid. I tested the recursion limit (x-axis) vs the time elapsed (y-axis).
+Overall, the as the array grows, the more time is require to run. The data doesn't follow a smooth line, but instead
+quite a lot of fluctuation.
+
+-----
+
+NOTE 2: Graph_Fluctuation.png
+
+Here, between the recursion limit of approximately 190 and 300, there is a lot fluctuation from some specific array
+sizes. This means that it took a significant higher sorting time comparing to the rest of the graph, especially smaller arrays.
+
+-----
+
+NOTE 3: Graph_Zoomed.png
+
+In this graph, I eliminated arrays that followed similar pattern and focused on 5 arrays that show interesting spikes.
+These arrays, although I couldn't find an explanation why it happens, 85K, 90K and 95K form an interesting pattern, which
+seems to go up, become steady for a quick moment, then go down and repeat all over again. Also, this zoomed graph proves
+that bigger arrays take more time to run and are more unstable when using quick sort algorithm.
+
+----
+
+NOTE 4: Graph_Pattern_Highlighted.png
+
+Perhaps the most apparent, this show that the arrays are mostly stable when smaller and at the beginning of the run (time).
+
+
